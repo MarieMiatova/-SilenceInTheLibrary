@@ -52,37 +52,30 @@ function addBook(library, title, author, year, genre, pages) {
     removeBook,
   };
   
-  // 1.Добавление книг в библиотеку
+  
   addBook(library, "Хоббит", "Дж. Р. Р. Толкиен", 1937, "Фэнтези", 310);
   addBook(library, "Гарри Поттер и философский камень", "Дж. К. Роулинг", 1997, "Фэнтези", 223);
   addBook(library, "1984", "Джордж Оруэлл", 1949, "Антиутопия", 328);
   
-  // 2. Поиск книг по автору
   console.log('2. Поиск книг по автору')
   console.log(findBooksByAuthor(library, "Дж. Р. Р. Толкиен"));
   
-  // 3. Фильтрация книг по жанру
   console.log('3. Фильтрация книг по жанру')
   console.log(filterBooksByGenre(library, "Фэнтези"));
   
-  // 4. Генерация отчета по количеству книг каждого жанра
   console.log('4. Генерация отчета по количеству книг каждого жанра')
   console.log(genreReport(library));
   
-  // 5. Генерация отчета по среднему количеству страниц
   console.log('5. Генерация отчета по среднему количеству страниц')
   console.log(`Среднее количество страниц: 
   ${averagePagesReport(library)}`);
   
-  // 6. Сортировка книг по году издания
-  console.log(' 6. Сортировка книг по году издания')
+  console.log('6. Сортировка книг по году издания')
   console.log(sortBooksByYear(library));
-  
-  // 7. Удаление книги из библиотеки
-  console.log(' 7. Удаление книги из библиотеки')
+
+  console.log('7. Удаление книги из библиотеки')
   removeBook(library, "1984");
   
-  // 8. Вывод обновленной библиотеки
   console.log('8. Вывод обновленной библиотеки')
   console.log(library.books);
   
